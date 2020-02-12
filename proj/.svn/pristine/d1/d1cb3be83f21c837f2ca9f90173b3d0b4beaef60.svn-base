@@ -1,0 +1,150 @@
+\hypertarget{video__gr_8h}{}\section{video\+\_\+gr.\+h File Reference}
+\label{video__gr_8h}\index{video\+\_\+gr.\+h@{video\+\_\+gr.\+h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$minix/driver.\+h$>$}\newline
+{\ttfamily \#include $<$sys/mman.\+h$>$}\newline
+Include dependency graph for video\+\_\+gr.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$() \hyperlink{video__gr_8h_aa6c1ff5024cd4d15e476bce487584daa}{vg\+\_\+init} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Initializes the video module in graphics mode. \end{DoxyCompactList}\item 
+int \hyperlink{video__gr_8h_ab20a606ca3d3aa819249eeca339aee79}{set\+\_\+pixel} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw pixel with specified color at position with x and y coordinates. \end{DoxyCompactList}\item 
+int() \hyperlink{video__gr_8h_a5e5b25bd525250f61f40b9e9f212d5e6}{vg\+\_\+draw\+\_\+hline} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a horizontal line by changing the video R\+AM. \end{DoxyCompactList}\item 
+int() \hyperlink{video__gr_8h_a99d2da2559e11200c6b40c469e9977ec}{vg\+\_\+draw\+\_\+rectangle} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a filled rectangle by changing the video R\+AM. \end{DoxyCompactList}\item 
+int \hyperlink{video__gr_8h_a59e8844cc1aa1952fe61cd313bceaac0}{vg\+\_\+draw\+\_\+img} (xpm\+\_\+image\+\_\+t img, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Function used to draw an image inthe screen. \end{DoxyCompactList}\item 
+void \hyperlink{video__gr_8h_abeed3c98202d48422a2508516f400b66}{update\+\_\+mouse\+\_\+position} (int deltaX, int deltaY)
+\begin{DoxyCompactList}\small\item\em Updates mouse\textquotesingle{}s coordinates. \end{DoxyCompactList}\item 
+void \hyperlink{video__gr_8h_a1c7e7cfa4c16543d18b9013b0ac46e69}{double\+Buffering} ()
+\begin{DoxyCompactList}\small\item\em Processes graphics data in one buffer while the next set of graphics data is read into the other buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{video__gr_8h_a1c7e7cfa4c16543d18b9013b0ac46e69}\label{video__gr_8h_a1c7e7cfa4c16543d18b9013b0ac46e69}} 
+\index{video\+\_\+gr.\+h@{video\+\_\+gr.\+h}!double\+Buffering@{double\+Buffering}}
+\index{double\+Buffering@{double\+Buffering}!video\+\_\+gr.\+h@{video\+\_\+gr.\+h}}
+\subsubsection{\texorpdfstring{double\+Buffering()}{doubleBuffering()}}
+{\footnotesize\ttfamily void double\+Buffering (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Processes graphics data in one buffer while the next set of graphics data is read into the other buffer. 
+
+\mbox{\Hypertarget{video__gr_8h_ab20a606ca3d3aa819249eeca339aee79}\label{video__gr_8h_ab20a606ca3d3aa819249eeca339aee79}} 
+\index{video\+\_\+gr.\+h@{video\+\_\+gr.\+h}!set\+\_\+pixel@{set\+\_\+pixel}}
+\index{set\+\_\+pixel@{set\+\_\+pixel}!video\+\_\+gr.\+h@{video\+\_\+gr.\+h}}
+\subsubsection{\texorpdfstring{set\+\_\+pixel()}{set\_pixel()}}
+{\footnotesize\ttfamily int set\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw pixel with specified color at position with x and y coordinates. 
+
+\mbox{\Hypertarget{video__gr_8h_abeed3c98202d48422a2508516f400b66}\label{video__gr_8h_abeed3c98202d48422a2508516f400b66}} 
+\index{video\+\_\+gr.\+h@{video\+\_\+gr.\+h}!update\+\_\+mouse\+\_\+position@{update\+\_\+mouse\+\_\+position}}
+\index{update\+\_\+mouse\+\_\+position@{update\+\_\+mouse\+\_\+position}!video\+\_\+gr.\+h@{video\+\_\+gr.\+h}}
+\subsubsection{\texorpdfstring{update\+\_\+mouse\+\_\+position()}{update\_mouse\_position()}}
+{\footnotesize\ttfamily void update\+\_\+mouse\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{deltaX,  }\item[{int}]{deltaY }\end{DoxyParamCaption})}
+
+
+
+Updates mouse\textquotesingle{}s coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em deltaX} & \\
+\hline
+{\em deltaY} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{video__gr_8h_a5e5b25bd525250f61f40b9e9f212d5e6}\label{video__gr_8h_a5e5b25bd525250f61f40b9e9f212d5e6}} 
+\index{video\+\_\+gr.\+h@{video\+\_\+gr.\+h}!vg\+\_\+draw\+\_\+hline@{vg\+\_\+draw\+\_\+hline}}
+\index{vg\+\_\+draw\+\_\+hline@{vg\+\_\+draw\+\_\+hline}!video\+\_\+gr.\+h@{video\+\_\+gr.\+h}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+hline()}{vg\_draw\_hline()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a horizontal line by changing the video R\+AM. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{video__gr_8h_a5e5b25bd525250f61f40b9e9f212d5e6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8h_a59e8844cc1aa1952fe61cd313bceaac0}\label{video__gr_8h_a59e8844cc1aa1952fe61cd313bceaac0}} 
+\index{video\+\_\+gr.\+h@{video\+\_\+gr.\+h}!vg\+\_\+draw\+\_\+img@{vg\+\_\+draw\+\_\+img}}
+\index{vg\+\_\+draw\+\_\+img@{vg\+\_\+draw\+\_\+img}!video\+\_\+gr.\+h@{video\+\_\+gr.\+h}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+img()}{vg\_draw\_img()}}
+{\footnotesize\ttfamily int vg\+\_\+draw\+\_\+img (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{img,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Function used to draw an image inthe screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{video__gr_8h_a59e8844cc1aa1952fe61cd313bceaac0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8h_a99d2da2559e11200c6b40c469e9977ec}\label{video__gr_8h_a99d2da2559e11200c6b40c469e9977ec}} 
+\index{video\+\_\+gr.\+h@{video\+\_\+gr.\+h}!vg\+\_\+draw\+\_\+rectangle@{vg\+\_\+draw\+\_\+rectangle}}
+\index{vg\+\_\+draw\+\_\+rectangle@{vg\+\_\+draw\+\_\+rectangle}!video\+\_\+gr.\+h@{video\+\_\+gr.\+h}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+rectangle()}{vg\_draw\_rectangle()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a filled rectangle by changing the video R\+AM. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8h_a99d2da2559e11200c6b40c469e9977ec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8h_aa6c1ff5024cd4d15e476bce487584daa}\label{video__gr_8h_aa6c1ff5024cd4d15e476bce487584daa}} 
+\index{video\+\_\+gr.\+h@{video\+\_\+gr.\+h}!vg\+\_\+init@{vg\+\_\+init}}
+\index{vg\+\_\+init@{vg\+\_\+init}!video\+\_\+gr.\+h@{video\+\_\+gr.\+h}}
+\subsubsection{\texorpdfstring{vg\+\_\+init()}{vg\_init()}}
+{\footnotesize\ttfamily void$\ast$() vg\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Initializes the video module in graphics mode. 
+

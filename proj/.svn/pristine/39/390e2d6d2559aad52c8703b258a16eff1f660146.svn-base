@@ -1,0 +1,8 @@
+#include <stdbool.h>
+#include <stdint.h>
+
+void createXPMs();
+int printCharacter(char letter, int x_pos, int y_pos);
+void printWord(char word[], int x_pos, int y_pos);
+void printCounter();
+void printDate();

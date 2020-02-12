@@ -1,0 +1,287 @@
+\hypertarget{game_8h}{}\section{game.\+h File Reference}
+\label{game_8h}\index{game.\+h@{game.\+h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for game.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=129pt]{game_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{game_8h_ac92d3b835636641550b12b0f93daf21d}{start} ()
+\begin{DoxyCompactList}\small\item\em Window with the initial page of this game. \end{DoxyCompactList}\item 
+int \hyperlink{game_8h_a8396c50bf544009fb2fc4907b00cbad3}{main\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Page with the menu of the game, where you can choose if you want to play in single\+Player mode or in multiplayer, if you want to see the high\+Scores or if you want to exit the game. \end{DoxyCompactList}\item 
+bool \hyperlink{game_8h_abcc0d13a8efb59f46a7b7282fe57deda}{end\+Game} (int arr\mbox{[}$\,$\mbox{]}, int x)
+\begin{DoxyCompactList}\small\item\em Verifies if the game has already ended. \end{DoxyCompactList}\item 
+int \hyperlink{game_8h_a438701d5675dc7ebdbb0652efb12b1ad}{pc\+\_\+play} (int arr\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Makes the pc play in the singleplayer mode. \end{DoxyCompactList}\item 
+int \hyperlink{game_8h_a994db5dd80286841d72155964bc23a6e}{draw\+\_\+images\+\_\+getX} (int arr\mbox{[}$\,$\mbox{]}, int i)
+\begin{DoxyCompactList}\small\item\em Gets the x coordinate to draw an image. \end{DoxyCompactList}\item 
+int \hyperlink{game_8h_aad8a7a979cd1e528cfd3030c7b05e82b}{draw\+\_\+images\+\_\+getY} (int arr\mbox{[}$\,$\mbox{]}, int i)
+\begin{DoxyCompactList}\small\item\em Gets the y coordinate to draw an image. \end{DoxyCompactList}\item 
+bool \hyperlink{game_8h_a4c16e525ed5540b8a63b0138fd547cd4}{is\+Occupied} (int board\+\_\+positions\mbox{[}$\,$\mbox{]}, int i)
+\begin{DoxyCompactList}\small\item\em Checks if a position in the board is already occupied. \end{DoxyCompactList}\item 
+int \hyperlink{game_8h_a357749241a712ea331cfa894ddab43bc}{game\+Over} (int positions\mbox{[}$\,$\mbox{]}, int time)
+\begin{DoxyCompactList}\small\item\em When the game ends it is added a new record with the time the play lasted. \end{DoxyCompactList}\item 
+int \hyperlink{game_8h_af6255b703a46e4cedbe0787676b9a5b3}{single\+Player} ()
+\begin{DoxyCompactList}\small\item\em Starts and develops the game in singleplayer mode. The player plays against the pc. \end{DoxyCompactList}\item 
+int \hyperlink{game_8h_aeafa2e9ae94ce3367ec26e287be25a09}{multiplayer} ()
+\begin{DoxyCompactList}\small\item\em Starts and develops the game in multiplayer mode. Player 1 and player 2 play against each other in the same pc. \end{DoxyCompactList}\item 
+void \hyperlink{game_8h_af5d1b7d64432370177088279878d1c3b}{highscores} ()
+\begin{DoxyCompactList}\small\item\em Page with the records of players that played in single\+Player mode. \end{DoxyCompactList}\item 
+int \hyperlink{game_8h_aede67e93f7e68c80a15439bd673effc5}{finish} ()
+\begin{DoxyCompactList}\small\item\em Ends the whole program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{game_8h_a994db5dd80286841d72155964bc23a6e}\label{game_8h_a994db5dd80286841d72155964bc23a6e}} 
+\index{game.\+h@{game.\+h}!draw\+\_\+images\+\_\+getX@{draw\+\_\+images\+\_\+getX}}
+\index{draw\+\_\+images\+\_\+getX@{draw\+\_\+images\+\_\+getX}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{draw\+\_\+images\+\_\+get\+X()}{draw\_images\_getX()}}
+{\footnotesize\ttfamily int draw\+\_\+images\+\_\+getX (\begin{DoxyParamCaption}\item[{int}]{arr\mbox{[}$\,$\mbox{]},  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Gets the x coordinate to draw an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & \\
+\hline
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int x position do draw an image 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8h_aad8a7a979cd1e528cfd3030c7b05e82b}\label{game_8h_aad8a7a979cd1e528cfd3030c7b05e82b}} 
+\index{game.\+h@{game.\+h}!draw\+\_\+images\+\_\+getY@{draw\+\_\+images\+\_\+getY}}
+\index{draw\+\_\+images\+\_\+getY@{draw\+\_\+images\+\_\+getY}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{draw\+\_\+images\+\_\+get\+Y()}{draw\_images\_getY()}}
+{\footnotesize\ttfamily int draw\+\_\+images\+\_\+getY (\begin{DoxyParamCaption}\item[{int}]{arr\mbox{[}$\,$\mbox{]},  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Gets the y coordinate to draw an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & \\
+\hline
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int y position do draw an image 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8h_abcc0d13a8efb59f46a7b7282fe57deda}\label{game_8h_abcc0d13a8efb59f46a7b7282fe57deda}} 
+\index{game.\+h@{game.\+h}!end\+Game@{end\+Game}}
+\index{end\+Game@{end\+Game}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{end\+Game()}{endGame()}}
+{\footnotesize\ttfamily bool end\+Game (\begin{DoxyParamCaption}\item[{int}]{arr\mbox{[}$\,$\mbox{]},  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Verifies if the game has already ended. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & \\
+\hline
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8h_aede67e93f7e68c80a15439bd673effc5}\label{game_8h_aede67e93f7e68c80a15439bd673effc5}} 
+\index{game.\+h@{game.\+h}!finish@{finish}}
+\index{finish@{finish}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{finish()}{finish()}}
+{\footnotesize\ttfamily int finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ends the whole program. 
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8h_a357749241a712ea331cfa894ddab43bc}\label{game_8h_a357749241a712ea331cfa894ddab43bc}} 
+\index{game.\+h@{game.\+h}!game\+Over@{game\+Over}}
+\index{game\+Over@{game\+Over}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{game\+Over()}{gameOver()}}
+{\footnotesize\ttfamily int game\+Over (\begin{DoxyParamCaption}\item[{int}]{positions\mbox{[}$\,$\mbox{]},  }\item[{int}]{time }\end{DoxyParamCaption})}
+
+
+
+When the game ends it is added a new record with the time the play lasted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & \\
+\hline
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a357749241a712ea331cfa894ddab43bc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_af5d1b7d64432370177088279878d1c3b}\label{game_8h_af5d1b7d64432370177088279878d1c3b}} 
+\index{game.\+h@{game.\+h}!highscores@{highscores}}
+\index{highscores@{highscores}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{highscores()}{highscores()}}
+{\footnotesize\ttfamily void highscores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Page with the records of players that played in single\+Player mode. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_af5d1b7d64432370177088279878d1c3b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_a4c16e525ed5540b8a63b0138fd547cd4}\label{game_8h_a4c16e525ed5540b8a63b0138fd547cd4}} 
+\index{game.\+h@{game.\+h}!is\+Occupied@{is\+Occupied}}
+\index{is\+Occupied@{is\+Occupied}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{is\+Occupied()}{isOccupied()}}
+{\footnotesize\ttfamily bool is\+Occupied (\begin{DoxyParamCaption}\item[{int}]{board\+\_\+positions\mbox{[}$\,$\mbox{]},  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Checks if a position in the board is already occupied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+\_\+positions} & \\
+\hline
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8h_a8396c50bf544009fb2fc4907b00cbad3}\label{game_8h_a8396c50bf544009fb2fc4907b00cbad3}} 
+\index{game.\+h@{game.\+h}!main\+Menu@{main\+Menu}}
+\index{main\+Menu@{main\+Menu}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{main\+Menu()}{mainMenu()}}
+{\footnotesize\ttfamily int main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Page with the menu of the game, where you can choose if you want to play in single\+Player mode or in multiplayer, if you want to see the high\+Scores or if you want to exit the game. 
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a8396c50bf544009fb2fc4907b00cbad3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_aeafa2e9ae94ce3367ec26e287be25a09}\label{game_8h_aeafa2e9ae94ce3367ec26e287be25a09}} 
+\index{game.\+h@{game.\+h}!multiplayer@{multiplayer}}
+\index{multiplayer@{multiplayer}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{multiplayer()}{multiplayer()}}
+{\footnotesize\ttfamily int multiplayer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts and develops the game in multiplayer mode. Player 1 and player 2 play against each other in the same pc. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_aeafa2e9ae94ce3367ec26e287be25a09_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_a438701d5675dc7ebdbb0652efb12b1ad}\label{game_8h_a438701d5675dc7ebdbb0652efb12b1ad}} 
+\index{game.\+h@{game.\+h}!pc\+\_\+play@{pc\+\_\+play}}
+\index{pc\+\_\+play@{pc\+\_\+play}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{pc\+\_\+play()}{pc\_play()}}
+{\footnotesize\ttfamily int pc\+\_\+play (\begin{DoxyParamCaption}\item[{int}]{arr\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Makes the pc play in the singleplayer mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int position of the tiger in the board for singleplayer mode 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8h_af6255b703a46e4cedbe0787676b9a5b3}\label{game_8h_af6255b703a46e4cedbe0787676b9a5b3}} 
+\index{game.\+h@{game.\+h}!single\+Player@{single\+Player}}
+\index{single\+Player@{single\+Player}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{single\+Player()}{singlePlayer()}}
+{\footnotesize\ttfamily int single\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts and develops the game in singleplayer mode. The player plays against the pc. 
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_af6255b703a46e4cedbe0787676b9a5b3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_ac92d3b835636641550b12b0f93daf21d}\label{game_8h_ac92d3b835636641550b12b0f93daf21d}} 
+\index{game.\+h@{game.\+h}!start@{start}}
+\index{start@{start}!game.\+h@{game.\+h}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily int start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Window with the initial page of this game. 
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_ac92d3b835636641550b12b0f93daf21d_cgraph}
+\end{center}
+\end{figure}

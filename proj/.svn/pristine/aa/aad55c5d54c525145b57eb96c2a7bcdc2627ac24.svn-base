@@ -1,0 +1,224 @@
+\hypertarget{mouse_8h}{}\section{mouse.\+h File Reference}
+\label{mouse_8h}\index{mouse.\+h@{mouse.\+h}}
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+Include dependency graph for mouse.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{mouse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248}{state\+\_\+t} \{ \hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a0cb1b2c6a7db1f1084886c98909a3f36}{I\+N\+IT}, 
+\hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a61f3c57b6943c85413975507aede78cd}{D\+R\+AW}, 
+\hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a7c439d57b2bfac30bf99fd70f2895686}{F\+I\+R\+S\+T\+L\+I\+NE}, 
+\hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a80ce183aef7de8f4f84fe430ffcccf45}{D\+R\+A\+W\+S\+E\+C\+O\+ND}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{mouse_8h_a9da18257ff113b686bb826d154bfaa87}{mouse\+\_\+subscribe\+\_\+int} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes mouse interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{mouse_8h_a685ad2706aca36d9869a30a19b9f446a}{mouse\+\_\+unsubscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes mouse interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{mouse_8h_a354be65898ab3c1972788a51bc7e9e5a}{mouse\+\_\+process\+\_\+packets} (struct packet $\ast$pp)
+\begin{DoxyCompactList}\small\item\em Receives an incomplete packet and parses it. \end{DoxyCompactList}\item 
+int \hyperlink{mouse_8h_af705497321f2987d5d850326bbbdaa00}{write\+\_\+command} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Writes byte to mouse. \end{DoxyCompactList}\item 
+int \hyperlink{mouse_8h_acccec4ad0e781cfa7cfc9717dbd8941b}{enable\+Data\+Reporting} ()
+\begin{DoxyCompactList}\small\item\em Enables stream mode data reporting. \end{DoxyCompactList}\item 
+int \hyperlink{mouse_8h_a630c5bb9cbfcca20fac7347ff46794dc}{disable\+Data\+Reporting} ()
+\begin{DoxyCompactList}\small\item\em Disables stream mode data reporting. \end{DoxyCompactList}\item 
+void \hyperlink{mouse_8h_aa771b78747261f5007b749e21b29e233}{mouse\+\_\+gesture\+\_\+handler} (struct mouse\+\_\+ev $\ast$evt, uint8\+\_\+t x\+\_\+len, uint8\+\_\+t tolerance)
+\begin{DoxyCompactList}\small\item\em the function detects if the user draws an inverted V, from left to right and how it is drawn \end{DoxyCompactList}\item 
+struct mouse\+\_\+ev $\ast$ \hyperlink{mouse_8h_a839adb4af0b6075983e495bc84847af7}{detect\+Mouse\+Event} (struct packet $\ast$pp)
+\begin{DoxyCompactList}\small\item\em function detects the events that occur in the state machine \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mouse_8h_aa0aafed44fec19806d8f9ad834be1248}\label{mouse_8h_aa0aafed44fec19806d8f9ad834be1248}} 
+\index{mouse.\+h@{mouse.\+h}!state\+\_\+t@{state\+\_\+t}}
+\index{state\+\_\+t@{state\+\_\+t}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{state\+\_\+t}{state\_t}}
+{\footnotesize\ttfamily enum \hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248}{state\+\_\+t}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+N\+IT@{I\+N\+IT}!mouse.\+h@{mouse.\+h}}\index{mouse.\+h@{mouse.\+h}!I\+N\+IT@{I\+N\+IT}}}\mbox{\Hypertarget{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a0cb1b2c6a7db1f1084886c98909a3f36}\label{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a0cb1b2c6a7db1f1084886c98909a3f36}} 
+I\+N\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+R\+AW@{D\+R\+AW}!mouse.\+h@{mouse.\+h}}\index{mouse.\+h@{mouse.\+h}!D\+R\+AW@{D\+R\+AW}}}\mbox{\Hypertarget{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a61f3c57b6943c85413975507aede78cd}\label{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a61f3c57b6943c85413975507aede78cd}} 
+D\+R\+AW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+I\+R\+S\+T\+L\+I\+NE@{F\+I\+R\+S\+T\+L\+I\+NE}!mouse.\+h@{mouse.\+h}}\index{mouse.\+h@{mouse.\+h}!F\+I\+R\+S\+T\+L\+I\+NE@{F\+I\+R\+S\+T\+L\+I\+NE}}}\mbox{\Hypertarget{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a7c439d57b2bfac30bf99fd70f2895686}\label{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a7c439d57b2bfac30bf99fd70f2895686}} 
+F\+I\+R\+S\+T\+L\+I\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+R\+A\+W\+S\+E\+C\+O\+ND@{D\+R\+A\+W\+S\+E\+C\+O\+ND}!mouse.\+h@{mouse.\+h}}\index{mouse.\+h@{mouse.\+h}!D\+R\+A\+W\+S\+E\+C\+O\+ND@{D\+R\+A\+W\+S\+E\+C\+O\+ND}}}\mbox{\Hypertarget{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a80ce183aef7de8f4f84fe430ffcccf45}\label{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a80ce183aef7de8f4f84fe430ffcccf45}} 
+D\+R\+A\+W\+S\+E\+C\+O\+ND&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{mouse_8h_a839adb4af0b6075983e495bc84847af7}\label{mouse_8h_a839adb4af0b6075983e495bc84847af7}} 
+\index{mouse.\+h@{mouse.\+h}!detect\+Mouse\+Event@{detect\+Mouse\+Event}}
+\index{detect\+Mouse\+Event@{detect\+Mouse\+Event}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{detect\+Mouse\+Event()}{detectMouseEvent()}}
+{\footnotesize\ttfamily struct mouse\+\_\+ev$\ast$ detect\+Mouse\+Event (\begin{DoxyParamCaption}\item[{struct packet $\ast$}]{pp }\end{DoxyParamCaption})}
+
+
+
+function detects the events that occur in the state machine 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+struct mouse\+\_\+ev$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mouse_8h_a630c5bb9cbfcca20fac7347ff46794dc}\label{mouse_8h_a630c5bb9cbfcca20fac7347ff46794dc}} 
+\index{mouse.\+h@{mouse.\+h}!disable\+Data\+Reporting@{disable\+Data\+Reporting}}
+\index{disable\+Data\+Reporting@{disable\+Data\+Reporting}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{disable\+Data\+Reporting()}{disableDataReporting()}}
+{\footnotesize\ttfamily int disable\+Data\+Reporting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disables stream mode data reporting. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a630c5bb9cbfcca20fac7347ff46794dc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_acccec4ad0e781cfa7cfc9717dbd8941b}\label{mouse_8h_acccec4ad0e781cfa7cfc9717dbd8941b}} 
+\index{mouse.\+h@{mouse.\+h}!enable\+Data\+Reporting@{enable\+Data\+Reporting}}
+\index{enable\+Data\+Reporting@{enable\+Data\+Reporting}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{enable\+Data\+Reporting()}{enableDataReporting()}}
+{\footnotesize\ttfamily int enable\+Data\+Reporting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enables stream mode data reporting. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_acccec4ad0e781cfa7cfc9717dbd8941b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_aa771b78747261f5007b749e21b29e233}\label{mouse_8h_aa771b78747261f5007b749e21b29e233}} 
+\index{mouse.\+h@{mouse.\+h}!mouse\+\_\+gesture\+\_\+handler@{mouse\+\_\+gesture\+\_\+handler}}
+\index{mouse\+\_\+gesture\+\_\+handler@{mouse\+\_\+gesture\+\_\+handler}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{mouse\+\_\+gesture\+\_\+handler()}{mouse\_gesture\_handler()}}
+{\footnotesize\ttfamily void mouse\+\_\+gesture\+\_\+handler (\begin{DoxyParamCaption}\item[{struct mouse\+\_\+ev $\ast$}]{evt,  }\item[{uint8\+\_\+t}]{x\+\_\+len,  }\item[{uint8\+\_\+t}]{tolerance }\end{DoxyParamCaption})}
+
+
+
+the function detects if the user draws an inverted V, from left to right and how it is drawn 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & \\
+\hline
+{\em x\+\_\+len} & \\
+\hline
+{\em tolerance} & \\
+\hline
+\end{DoxyParams}
+soltar botao esquerdo --$>$ verifica inclinacao e deslocamento em x inclinacao $>$ 1 delta x $>$ x\+\_\+len
+
+movimentacao durante o desenho da linha verifica que deslocamentos(grandes) nao podem ser negativos verifica \char`\"{}pequenos\char`\"{} deslocamentos negativos
+
+soltar botao direito --$>$ verifica inclinacao e deslocamento em x inclinacao $>$ 1 delta x $>$ x\+\_\+len
+
+movimentacao durante o desenho da linha verifica que deslocamentos(grandes) nao podem ser negativos verifica \char`\"{}pequenos\char`\"{} deslocamentos negativos \mbox{\Hypertarget{mouse_8h_a354be65898ab3c1972788a51bc7e9e5a}\label{mouse_8h_a354be65898ab3c1972788a51bc7e9e5a}} 
+\index{mouse.\+h@{mouse.\+h}!mouse\+\_\+process\+\_\+packets@{mouse\+\_\+process\+\_\+packets}}
+\index{mouse\+\_\+process\+\_\+packets@{mouse\+\_\+process\+\_\+packets}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{mouse\+\_\+process\+\_\+packets()}{mouse\_process\_packets()}}
+{\footnotesize\ttfamily void mouse\+\_\+process\+\_\+packets (\begin{DoxyParamCaption}\item[{struct packet $\ast$}]{pp }\end{DoxyParamCaption})}
+
+
+
+Receives an incomplete packet and parses it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mouse_8h_a9da18257ff113b686bb826d154bfaa87}\label{mouse_8h_a9da18257ff113b686bb826d154bfaa87}} 
+\index{mouse.\+h@{mouse.\+h}!mouse\+\_\+subscribe\+\_\+int@{mouse\+\_\+subscribe\+\_\+int}}
+\index{mouse\+\_\+subscribe\+\_\+int@{mouse\+\_\+subscribe\+\_\+int}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{mouse\+\_\+subscribe\+\_\+int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mouse_8h_a685ad2706aca36d9869a30a19b9f446a}\label{mouse_8h_a685ad2706aca36d9869a30a19b9f446a}} 
+\index{mouse.\+h@{mouse.\+h}!mouse\+\_\+unsubscribe\+\_\+int@{mouse\+\_\+unsubscribe\+\_\+int}}
+\index{mouse\+\_\+unsubscribe\+\_\+int@{mouse\+\_\+unsubscribe\+\_\+int}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{mouse\+\_\+unsubscribe\+\_\+int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mouse_8h_af705497321f2987d5d850326bbbdaa00}\label{mouse_8h_af705497321f2987d5d850326bbbdaa00}} 
+\index{mouse.\+h@{mouse.\+h}!write\+\_\+command@{write\+\_\+command}}
+\index{write\+\_\+command@{write\+\_\+command}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{write\+\_\+command()}{write\_command()}}
+{\footnotesize\ttfamily int write\+\_\+command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command }\end{DoxyParamCaption})}
+
+
+
+Writes byte to mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_af705497321f2987d5d850326bbbdaa00_cgraph}
+\end{center}
+\end{figure}

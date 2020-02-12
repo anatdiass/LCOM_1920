@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['k_5fkey',['K_KEY',['../i8042_8h.html#a1d4c75734307f98fc096e756ffac6852',1,'i8042.h']]],
+  ['kbc_5fcmd_5freg',['KBC_CMD_REG',['../i8042_8h.html#a6d57c7927a10f638c83046b52c8caac9',1,'i8042.h']]],
+  ['kbc_5fih',['kbc_ih',['../keyboard_8c.html#aea970a154161a35f6894898a092ed70a',1,'keyboard.c']]],
+  ['kbc_5fsubscribe_5fint',['kbc_subscribe_int',['../keyboard_8c.html#a02884ada1971dbade466081413210b18',1,'kbc_subscribe_int(uint8_t *bit_no):&#160;keyboard.c'],['../keyboard_8h.html#a02884ada1971dbade466081413210b18',1,'kbc_subscribe_int(uint8_t *bit_no):&#160;keyboard.c']]],
+  ['kbc_5funsubscribe_5fint',['kbc_unsubscribe_int',['../keyboard_8c.html#a1102381e6a9e876e05dd78c58ccb5673',1,'kbc_unsubscribe_int():&#160;keyboard.c'],['../keyboard_8h.html#a1102381e6a9e876e05dd78c58ccb5673',1,'kbc_unsubscribe_int():&#160;keyboard.c']]],
+  ['kbd_5fhookid',['kbd_hookID',['../keyboard_8c.html#a78ed313ff71c88678b6eafaa168e404f',1,'keyboard.c']]],
+  ['kbd_5firq',['KBD_IRQ',['../i8042_8h.html#a5c1072213ce8d8cd43628c4319ae0391',1,'i8042.h']]],
+  ['key_5fscancode',['key_scancode',['../game_8c.html#a1784298927f3eca3a4a6fb19ae3636b4',1,'key_scancode():&#160;keyboard.c'],['../keyboard_8c.html#a1784298927f3eca3a4a6fb19ae3636b4',1,'key_scancode():&#160;keyboard.c'],['../proj_8c.html#a1784298927f3eca3a4a6fb19ae3636b4',1,'key_scancode():&#160;keyboard.c']]],
+  ['keyboard_2ec',['keyboard.c',['../keyboard_8c.html',1,'']]],
+  ['keyboard_2eh',['keyboard.h',['../keyboard_8h.html',1,'']]]
+];

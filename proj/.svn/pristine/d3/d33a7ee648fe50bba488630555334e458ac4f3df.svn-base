@@ -1,0 +1,216 @@
+\hypertarget{keyboard_8c}{}\section{keyboard.\+c File Reference}
+\label{keyboard_8c}\index{keyboard.\+c@{keyboard.\+c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/liblm.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/proj.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+Include dependency graph for keyboard.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \hyperlink{keyboard_8c_a02884ada1971dbade466081413210b18}{kbc\+\_\+subscribe\+\_\+int} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes keyboard interrupts. \end{DoxyCompactList}\item 
+int() \hyperlink{keyboard_8c_a1102381e6a9e876e05dd78c58ccb5673}{kbc\+\_\+unsubscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes keyboard interrupts. \end{DoxyCompactList}\item 
+int() \hyperlink{keyboard_8c_a79a031a8611f5b2d6afa4158e92b0fb4}{util\+\_\+sys\+\_\+inb} (int port, uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Mask function of sys\+\_\+inb(port\+\_\+t port, uint32\+\_\+t $\ast$byte) \end{DoxyCompactList}\item 
+void() \hyperlink{keyboard_8c_aea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih} ()
+\item 
+void \hyperlink{keyboard_8c_a98f70aee8a1c8f087ddd363dd3149866}{process\+Key\+Scancode} (uint8\+\_\+t scancode)
+\begin{DoxyCompactList}\small\item\em Processes the scancode. Checks if it is a make or a break code, gets it\textquotesingle{}s size in bytes and gets an array with size elements, with the scancode bytes. \end{DoxyCompactList}\item 
+int \hyperlink{keyboard_8c_adba545b58409322e070c484942f29b92}{read\+Command\+Byte} (uint8\+\_\+t command\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em Reads from the output buffer 0x60. \end{DoxyCompactList}\item 
+int \hyperlink{keyboard_8c_ad5f628ce178177844595f0c5ec79d017}{write\+Command\+Byte} (uint8\+\_\+t command\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em Writes to the output buffer 0x60. \end{DoxyCompactList}\item 
+int \hyperlink{keyboard_8c_ab58c395d0715d93817b36b8d9a77c808}{process\+Command\+Byte} (uint8\+\_\+t command\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em Checks status register and if input\+Buffer is full. \end{DoxyCompactList}\item 
+void \hyperlink{keyboard_8c_ac4b3f0121a2ac45668528454fbf14f64}{enable\+Interrupts} ()
+\begin{DoxyCompactList}\small\item\em Enables Minix interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{keyboard_8c_a78ed313ff71c88678b6eafaa168e404f}{kbd\+\_\+hook\+ID} = 0
+\item 
+uint8\+\_\+t \hyperlink{keyboard_8c_a1784298927f3eca3a4a6fb19ae3636b4}{key\+\_\+scancode} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{keyboard_8c_ac4b3f0121a2ac45668528454fbf14f64}\label{keyboard_8c_ac4b3f0121a2ac45668528454fbf14f64}} 
+\index{keyboard.\+c@{keyboard.\+c}!enable\+Interrupts@{enable\+Interrupts}}
+\index{enable\+Interrupts@{enable\+Interrupts}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{enable\+Interrupts()}{enableInterrupts()}}
+{\footnotesize\ttfamily void enable\+Interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enables Minix interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_ac4b3f0121a2ac45668528454fbf14f64_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_aea970a154161a35f6894898a092ed70a}\label{keyboard_8c_aea970a154161a35f6894898a092ed70a}} 
+\index{keyboard.\+c@{keyboard.\+c}!kbc\+\_\+ih@{kbc\+\_\+ih}}
+\index{kbc\+\_\+ih@{kbc\+\_\+ih}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{kbc\+\_\+ih()}{kbc\_ih()}}
+{\footnotesize\ttfamily void() kbc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{keyboard_8c_aea970a154161a35f6894898a092ed70a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a02884ada1971dbade466081413210b18}\label{keyboard_8c_a02884ada1971dbade466081413210b18}} 
+\index{keyboard.\+c@{keyboard.\+c}!kbc\+\_\+subscribe\+\_\+int@{kbc\+\_\+subscribe\+\_\+int}}
+\index{kbc\+\_\+subscribe\+\_\+int@{kbc\+\_\+subscribe\+\_\+int}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{kbc\+\_\+subscribe\+\_\+int()}{kbc\_subscribe\_int()}}
+{\footnotesize\ttfamily int() kbc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8c_a1102381e6a9e876e05dd78c58ccb5673}\label{keyboard_8c_a1102381e6a9e876e05dd78c58ccb5673}} 
+\index{keyboard.\+c@{keyboard.\+c}!kbc\+\_\+unsubscribe\+\_\+int@{kbc\+\_\+unsubscribe\+\_\+int}}
+\index{kbc\+\_\+unsubscribe\+\_\+int@{kbc\+\_\+unsubscribe\+\_\+int}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{kbc\+\_\+unsubscribe\+\_\+int()}{kbc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() kbc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8c_ab58c395d0715d93817b36b8d9a77c808}\label{keyboard_8c_ab58c395d0715d93817b36b8d9a77c808}} 
+\index{keyboard.\+c@{keyboard.\+c}!process\+Command\+Byte@{process\+Command\+Byte}}
+\index{process\+Command\+Byte@{process\+Command\+Byte}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{process\+Command\+Byte()}{processCommandByte()}}
+{\footnotesize\ttfamily int process\+Command\+Byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command\+\_\+byte }\end{DoxyParamCaption})}
+
+
+
+Checks status register and if input\+Buffer is full. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+byte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{keyboard_8c_ab58c395d0715d93817b36b8d9a77c808_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a98f70aee8a1c8f087ddd363dd3149866}\label{keyboard_8c_a98f70aee8a1c8f087ddd363dd3149866}} 
+\index{keyboard.\+c@{keyboard.\+c}!process\+Key\+Scancode@{process\+Key\+Scancode}}
+\index{process\+Key\+Scancode@{process\+Key\+Scancode}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{process\+Key\+Scancode()}{processKeyScancode()}}
+{\footnotesize\ttfamily void process\+Key\+Scancode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode }\end{DoxyParamCaption})}
+
+
+
+Processes the scancode. Checks if it is a make or a break code, gets it\textquotesingle{}s size in bytes and gets an array with size elements, with the scancode bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{keyboard_8c_adba545b58409322e070c484942f29b92}\label{keyboard_8c_adba545b58409322e070c484942f29b92}} 
+\index{keyboard.\+c@{keyboard.\+c}!read\+Command\+Byte@{read\+Command\+Byte}}
+\index{read\+Command\+Byte@{read\+Command\+Byte}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{read\+Command\+Byte()}{readCommandByte()}}
+{\footnotesize\ttfamily int read\+Command\+Byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command\+\_\+byte }\end{DoxyParamCaption})}
+
+
+
+Reads from the output buffer 0x60. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+byte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{keyboard_8c_adba545b58409322e070c484942f29b92_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a79a031a8611f5b2d6afa4158e92b0fb4}\label{keyboard_8c_a79a031a8611f5b2d6afa4158e92b0fb4}} 
+\index{keyboard.\+c@{keyboard.\+c}!util\+\_\+sys\+\_\+inb@{util\+\_\+sys\+\_\+inb}}
+\index{util\+\_\+sys\+\_\+inb@{util\+\_\+sys\+\_\+inb}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{util\+\_\+sys\+\_\+inb()}{util\_sys\_inb()}}
+{\footnotesize\ttfamily int() util\+\_\+sys\+\_\+inb (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Mask function of sys\+\_\+inb(port\+\_\+t port, uint32\+\_\+t $\ast$byte) 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8c_ad5f628ce178177844595f0c5ec79d017}\label{keyboard_8c_ad5f628ce178177844595f0c5ec79d017}} 
+\index{keyboard.\+c@{keyboard.\+c}!write\+Command\+Byte@{write\+Command\+Byte}}
+\index{write\+Command\+Byte@{write\+Command\+Byte}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{write\+Command\+Byte()}{writeCommandByte()}}
+{\footnotesize\ttfamily int write\+Command\+Byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command\+\_\+byte }\end{DoxyParamCaption})}
+
+
+
+Writes to the output buffer 0x60. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+byte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{keyboard_8c_a78ed313ff71c88678b6eafaa168e404f}\label{keyboard_8c_a78ed313ff71c88678b6eafaa168e404f}} 
+\index{keyboard.\+c@{keyboard.\+c}!kbd\+\_\+hook\+ID@{kbd\+\_\+hook\+ID}}
+\index{kbd\+\_\+hook\+ID@{kbd\+\_\+hook\+ID}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{kbd\+\_\+hook\+ID}{kbd\_hookID}}
+{\footnotesize\ttfamily int kbd\+\_\+hook\+ID = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{keyboard_8c_a1784298927f3eca3a4a6fb19ae3636b4}\label{keyboard_8c_a1784298927f3eca3a4a6fb19ae3636b4}} 
+\index{keyboard.\+c@{keyboard.\+c}!key\+\_\+scancode@{key\+\_\+scancode}}
+\index{key\+\_\+scancode@{key\+\_\+scancode}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{key\+\_\+scancode}{key\_scancode}}
+{\footnotesize\ttfamily uint8\+\_\+t key\+\_\+scancode = 0}
+

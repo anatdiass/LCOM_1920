@@ -1,0 +1,239 @@
+\hypertarget{video__gr_8c}{}\section{video\+\_\+gr.\+c File Reference}
+\label{video__gr_8c}\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/liblm.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/proj.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+gr.\+h\char`\"{}}\newline
+Include dependency graph for video\+\_\+gr.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$() \hyperlink{video__gr_8c_aa6c1ff5024cd4d15e476bce487584daa}{vg\+\_\+init} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Initializes the video module in graphics mode. \end{DoxyCompactList}\item 
+int \hyperlink{video__gr_8c_ab20a606ca3d3aa819249eeca339aee79}{set\+\_\+pixel} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw pixel with specified color at position with x and y coordinates. \end{DoxyCompactList}\item 
+void \hyperlink{video__gr_8c_a1c7e7cfa4c16543d18b9013b0ac46e69}{double\+Buffering} ()
+\begin{DoxyCompactList}\small\item\em Processes graphics data in one buffer while the next set of graphics data is read into the other buffer. \end{DoxyCompactList}\item 
+int() \hyperlink{video__gr_8c_a5e5b25bd525250f61f40b9e9f212d5e6}{vg\+\_\+draw\+\_\+hline} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a horizontal line by changing the video R\+AM. \end{DoxyCompactList}\item 
+int() \hyperlink{video__gr_8c_a99d2da2559e11200c6b40c469e9977ec}{vg\+\_\+draw\+\_\+rectangle} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a filled rectangle by changing the video R\+AM. \end{DoxyCompactList}\item 
+int \hyperlink{video__gr_8c_a59e8844cc1aa1952fe61cd313bceaac0}{vg\+\_\+draw\+\_\+img} (xpm\+\_\+image\+\_\+t img, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Function used to draw an image inthe screen. \end{DoxyCompactList}\item 
+void \hyperlink{video__gr_8c_abeed3c98202d48422a2508516f400b66}{update\+\_\+mouse\+\_\+position} (int deltaX, int deltaY)
+\begin{DoxyCompactList}\small\item\em Updates mouse\textquotesingle{}s coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{video__gr_8c_a6186c07837a5c62bcfc21fa5693573a1}{x\+Cursor}
+\item 
+int \hyperlink{video__gr_8c_ac71de7e427bb2a45704df6c13ab4b6e2}{y\+Cursor}
+\item 
+static uint16\+\_\+t \hyperlink{video__gr_8c_abe58eeedd56fd7968e39f6727957f2db}{h\+Res}
+\item 
+static uint16\+\_\+t \hyperlink{video__gr_8c_a6163e297296b2d6a028c5a21a821727f}{v\+Res}
+\item 
+static uint8\+\_\+t \hyperlink{video__gr_8c_a41f0887b7d19402e0123edd9c2cbec88}{bits\+\_\+per\+\_\+pixel}
+\item 
+static char $\ast$ \hyperlink{video__gr_8c_a93a24e067b9083bed6fb5c0336fd7a01}{video\+\_\+mem}
+\item 
+static char $\ast$ \hyperlink{video__gr_8c_ab370fbd615aaf99e0e066d56d3f38ea8}{video\+\_\+mem2}
+\item 
+unsigned int \hyperlink{video__gr_8c_af856b4fb3e3f77e7beed552fb48a7c3a}{vram\+\_\+base}
+\item 
+unsigned int \hyperlink{video__gr_8c_a17b12b87c65aaa04215d9bdb7e9e84dd}{vram\+\_\+size}
+\item 
+static uint8\+\_\+t \hyperlink{video__gr_8c_a36b87dc42923f704d16a629834a21b1e}{bytes\+\_\+per\+\_\+pixel}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \hyperlink{video__gr_8c_adb1f08b438cf612e163fe7d66cde86d0}{vmi}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{video__gr_8c_a1c7e7cfa4c16543d18b9013b0ac46e69}\label{video__gr_8c_a1c7e7cfa4c16543d18b9013b0ac46e69}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!double\+Buffering@{double\+Buffering}}
+\index{double\+Buffering@{double\+Buffering}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{double\+Buffering()}{doubleBuffering()}}
+{\footnotesize\ttfamily void double\+Buffering (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Processes graphics data in one buffer while the next set of graphics data is read into the other buffer. 
+
+\mbox{\Hypertarget{video__gr_8c_ab20a606ca3d3aa819249eeca339aee79}\label{video__gr_8c_ab20a606ca3d3aa819249eeca339aee79}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!set\+\_\+pixel@{set\+\_\+pixel}}
+\index{set\+\_\+pixel@{set\+\_\+pixel}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{set\+\_\+pixel()}{set\_pixel()}}
+{\footnotesize\ttfamily int set\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw pixel with specified color at position with x and y coordinates. 
+
+\mbox{\Hypertarget{video__gr_8c_abeed3c98202d48422a2508516f400b66}\label{video__gr_8c_abeed3c98202d48422a2508516f400b66}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!update\+\_\+mouse\+\_\+position@{update\+\_\+mouse\+\_\+position}}
+\index{update\+\_\+mouse\+\_\+position@{update\+\_\+mouse\+\_\+position}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{update\+\_\+mouse\+\_\+position()}{update\_mouse\_position()}}
+{\footnotesize\ttfamily void update\+\_\+mouse\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{deltaX,  }\item[{int}]{deltaY }\end{DoxyParamCaption})}
+
+
+
+Updates mouse\textquotesingle{}s coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em deltaX} & \\
+\hline
+{\em deltaY} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{video__gr_8c_a5e5b25bd525250f61f40b9e9f212d5e6}\label{video__gr_8c_a5e5b25bd525250f61f40b9e9f212d5e6}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!vg\+\_\+draw\+\_\+hline@{vg\+\_\+draw\+\_\+hline}}
+\index{vg\+\_\+draw\+\_\+hline@{vg\+\_\+draw\+\_\+hline}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+hline()}{vg\_draw\_hline()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a horizontal line by changing the video R\+AM. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{video__gr_8c_a5e5b25bd525250f61f40b9e9f212d5e6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8c_a59e8844cc1aa1952fe61cd313bceaac0}\label{video__gr_8c_a59e8844cc1aa1952fe61cd313bceaac0}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!vg\+\_\+draw\+\_\+img@{vg\+\_\+draw\+\_\+img}}
+\index{vg\+\_\+draw\+\_\+img@{vg\+\_\+draw\+\_\+img}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+img()}{vg\_draw\_img()}}
+{\footnotesize\ttfamily int vg\+\_\+draw\+\_\+img (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{img,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Function used to draw an image inthe screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{video__gr_8c_a59e8844cc1aa1952fe61cd313bceaac0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8c_a99d2da2559e11200c6b40c469e9977ec}\label{video__gr_8c_a99d2da2559e11200c6b40c469e9977ec}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!vg\+\_\+draw\+\_\+rectangle@{vg\+\_\+draw\+\_\+rectangle}}
+\index{vg\+\_\+draw\+\_\+rectangle@{vg\+\_\+draw\+\_\+rectangle}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+rectangle()}{vg\_draw\_rectangle()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a filled rectangle by changing the video R\+AM. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8c_a99d2da2559e11200c6b40c469e9977ec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8c_aa6c1ff5024cd4d15e476bce487584daa}\label{video__gr_8c_aa6c1ff5024cd4d15e476bce487584daa}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!vg\+\_\+init@{vg\+\_\+init}}
+\index{vg\+\_\+init@{vg\+\_\+init}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{vg\+\_\+init()}{vg\_init()}}
+{\footnotesize\ttfamily void$\ast$() vg\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Initializes the video module in graphics mode. 
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{video__gr_8c_a41f0887b7d19402e0123edd9c2cbec88}\label{video__gr_8c_a41f0887b7d19402e0123edd9c2cbec88}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!bits\+\_\+per\+\_\+pixel@{bits\+\_\+per\+\_\+pixel}}
+\index{bits\+\_\+per\+\_\+pixel@{bits\+\_\+per\+\_\+pixel}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{bits\+\_\+per\+\_\+pixel}{bits\_per\_pixel}}
+{\footnotesize\ttfamily uint8\+\_\+t bits\+\_\+per\+\_\+pixel\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__gr_8c_a36b87dc42923f704d16a629834a21b1e}\label{video__gr_8c_a36b87dc42923f704d16a629834a21b1e}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!bytes\+\_\+per\+\_\+pixel@{bytes\+\_\+per\+\_\+pixel}}
+\index{bytes\+\_\+per\+\_\+pixel@{bytes\+\_\+per\+\_\+pixel}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{bytes\+\_\+per\+\_\+pixel}{bytes\_per\_pixel}}
+{\footnotesize\ttfamily uint8\+\_\+t bytes\+\_\+per\+\_\+pixel\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__gr_8c_abe58eeedd56fd7968e39f6727957f2db}\label{video__gr_8c_abe58eeedd56fd7968e39f6727957f2db}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!h\+Res@{h\+Res}}
+\index{h\+Res@{h\+Res}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{h\+Res}{hRes}}
+{\footnotesize\ttfamily uint16\+\_\+t h\+Res\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__gr_8c_a93a24e067b9083bed6fb5c0336fd7a01}\label{video__gr_8c_a93a24e067b9083bed6fb5c0336fd7a01}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!video\+\_\+mem@{video\+\_\+mem}}
+\index{video\+\_\+mem@{video\+\_\+mem}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{video\+\_\+mem}{video\_mem}}
+{\footnotesize\ttfamily char$\ast$ video\+\_\+mem\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__gr_8c_ab370fbd615aaf99e0e066d56d3f38ea8}\label{video__gr_8c_ab370fbd615aaf99e0e066d56d3f38ea8}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!video\+\_\+mem2@{video\+\_\+mem2}}
+\index{video\+\_\+mem2@{video\+\_\+mem2}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{video\+\_\+mem2}{video\_mem2}}
+{\footnotesize\ttfamily char$\ast$ video\+\_\+mem2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__gr_8c_adb1f08b438cf612e163fe7d66cde86d0}\label{video__gr_8c_adb1f08b438cf612e163fe7d66cde86d0}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!vmi@{vmi}}
+\index{vmi@{vmi}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{vmi}{vmi}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t vmi}
+
+\mbox{\Hypertarget{video__gr_8c_af856b4fb3e3f77e7beed552fb48a7c3a}\label{video__gr_8c_af856b4fb3e3f77e7beed552fb48a7c3a}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!vram\+\_\+base@{vram\+\_\+base}}
+\index{vram\+\_\+base@{vram\+\_\+base}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{vram\+\_\+base}{vram\_base}}
+{\footnotesize\ttfamily unsigned int vram\+\_\+base}
+
+\mbox{\Hypertarget{video__gr_8c_a17b12b87c65aaa04215d9bdb7e9e84dd}\label{video__gr_8c_a17b12b87c65aaa04215d9bdb7e9e84dd}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!vram\+\_\+size@{vram\+\_\+size}}
+\index{vram\+\_\+size@{vram\+\_\+size}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{vram\+\_\+size}{vram\_size}}
+{\footnotesize\ttfamily unsigned int vram\+\_\+size}
+
+\mbox{\Hypertarget{video__gr_8c_a6163e297296b2d6a028c5a21a821727f}\label{video__gr_8c_a6163e297296b2d6a028c5a21a821727f}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!v\+Res@{v\+Res}}
+\index{v\+Res@{v\+Res}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{v\+Res}{vRes}}
+{\footnotesize\ttfamily uint16\+\_\+t v\+Res\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__gr_8c_a6186c07837a5c62bcfc21fa5693573a1}\label{video__gr_8c_a6186c07837a5c62bcfc21fa5693573a1}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!x\+Cursor@{x\+Cursor}}
+\index{x\+Cursor@{x\+Cursor}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{x\+Cursor}{xCursor}}
+{\footnotesize\ttfamily int x\+Cursor}
+
+\mbox{\Hypertarget{video__gr_8c_ac71de7e427bb2a45704df6c13ab4b6e2}\label{video__gr_8c_ac71de7e427bb2a45704df6c13ab4b6e2}} 
+\index{video\+\_\+gr.\+c@{video\+\_\+gr.\+c}!y\+Cursor@{y\+Cursor}}
+\index{y\+Cursor@{y\+Cursor}!video\+\_\+gr.\+c@{video\+\_\+gr.\+c}}
+\subsubsection{\texorpdfstring{y\+Cursor}{yCursor}}
+{\footnotesize\ttfamily int y\+Cursor}
+

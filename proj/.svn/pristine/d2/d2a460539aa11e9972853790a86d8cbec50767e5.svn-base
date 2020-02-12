@@ -1,0 +1,16 @@
+var searchData=
+[
+  ['g_5fkey',['G_KEY',['../i8042_8h.html#a82f468fa5d01499717ebb6c2336ffa14',1,'i8042.h']]],
+  ['game_2ec',['game.c',['../game_8c.html',1,'']]],
+  ['game_2eh',['game.h',['../game_8h.html',1,'']]],
+  ['gameover',['gameOver',['../game_8c.html#a357749241a712ea331cfa894ddab43bc',1,'gameOver(int positions[], int time):&#160;game.c'],['../game_8h.html#a357749241a712ea331cfa894ddab43bc',1,'gameOver(int positions[], int time):&#160;game.c']]],
+  ['getdayrtc',['getDayRTC',['../_r_t_c_8c.html#a642b92c5a826a299cb2860e66292ef6e',1,'getDayRTC():&#160;RTC.c'],['../_r_t_c_8h.html#a642b92c5a826a299cb2860e66292ef6e',1,'getDayRTC():&#160;RTC.c']]],
+  ['gethoursrtc',['getHoursRTC',['../_r_t_c_8c.html#af522330b63538c4b134a1100378c2b0b',1,'getHoursRTC():&#160;RTC.c'],['../_r_t_c_8h.html#af522330b63538c4b134a1100378c2b0b',1,'getHoursRTC():&#160;RTC.c']]],
+  ['getmaxtemp',['getMaxTemp',['../highscores_8c.html#a040cd157a22ab628204d6d281983dd2d',1,'getMaxTemp(int seconds[], int size):&#160;highscores.c'],['../highscores_8h.html#a040cd157a22ab628204d6d281983dd2d',1,'getMaxTemp(int seconds[], int size):&#160;highscores.c']]],
+  ['getminutesrtc',['getMinutesRTC',['../_r_t_c_8c.html#a034a8865fb0724c7dbccd2aeaea0e067',1,'getMinutesRTC():&#160;RTC.c'],['../_r_t_c_8h.html#a034a8865fb0724c7dbccd2aeaea0e067',1,'getMinutesRTC():&#160;RTC.c']]],
+  ['getmonthrtc',['getMonthRTC',['../_r_t_c_8c.html#a66a827a97e4ab8fc1b13fa71fd9ae6d5',1,'getMonthRTC():&#160;RTC.c'],['../_r_t_c_8h.html#a66a827a97e4ab8fc1b13fa71fd9ae6d5',1,'getMonthRTC():&#160;RTC.c']]],
+  ['getsecondsarray',['getSecondsArray',['../highscores_8c.html#a69d27e97870e9904ffcb24a5fed68943',1,'getSecondsArray(int res[]):&#160;highscores.c'],['../highscores_8h.html#a69d27e97870e9904ffcb24a5fed68943',1,'getSecondsArray(int res[]):&#160;highscores.c']]],
+  ['getsecondsrtc',['getSecondsRTC',['../_r_t_c_8c.html#a475c98a01fdc8b5e8b466cceb27ccaeb',1,'getSecondsRTC():&#160;RTC.c'],['../_r_t_c_8h.html#a475c98a01fdc8b5e8b466cceb27ccaeb',1,'getSecondsRTC():&#160;RTC.c']]],
+  ['getyearrtc',['getYearRTC',['../_r_t_c_8c.html#aa7a9691b450f3cb8317f75a691a1cb18',1,'getYearRTC():&#160;RTC.c'],['../_r_t_c_8h.html#aa7a9691b450f3cb8317f75a691a1cb18',1,'getYearRTC():&#160;RTC.c']]],
+  ['global_5fcounter',['global_counter',['../game_8c.html#aa135bb051c7a68877c688aaa5a9c64ab',1,'global_counter():&#160;timer.c'],['../proj_8c.html#aa135bb051c7a68877c688aaa5a9c64ab',1,'global_counter():&#160;timer.c'],['../timer_8c.html#aa135bb051c7a68877c688aaa5a9c64ab',1,'global_counter():&#160;timer.c'],['../xpm_handler_8c.html#aa135bb051c7a68877c688aaa5a9c64ab',1,'global_counter():&#160;timer.c']]]
+];

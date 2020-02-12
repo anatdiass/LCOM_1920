@@ -1,0 +1,13 @@
+<map id="printDate" name="printDate">
+<area shape="rect" id="node2" href="$_r_t_c_8c.html#a642b92c5a826a299cb2860e66292ef6e" title="Gets the day of current date. " alt="" coords="139,208,231,235"/>
+<area shape="rect" id="node5" href="$_r_t_c_8c.html#a66a827a97e4ab8fc1b13fa71fd9ae6d5" title="Gets the month of current date. " alt="" coords="133,5,237,32"/>
+<area shape="rect" id="node6" href="$_r_t_c_8c.html#aa7a9691b450f3cb8317f75a691a1cb18" title="Gets the year of current date. " alt="" coords="138,56,233,83"/>
+<area shape="rect" id="node7" href="$_r_t_c_8c.html#af522330b63538c4b134a1100378c2b0b" title="Gets the hours of current time. " alt="" coords="134,107,237,133"/>
+<area shape="rect" id="node8" href="$_r_t_c_8c.html#a034a8865fb0724c7dbccd2aeaea0e067" title="Gets the minutes of current time. " alt="" coords="128,157,243,184"/>
+<area shape="rect" id="node9" href="$xpm_handler_8c.html#ae3dca802aa81ca964a06f78b5084fe1f" title="Print the xpms of all the characters of a word. " alt="" coords="146,259,225,285"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="Mask function of sys_inb(port_t port, uint32_t *byte) " alt="" coords="297,132,388,159"/>
+<area shape="rect" id="node4" href="$_r_t_c_8c.html#af893fe92fd4cfc989300b92f84f57671" title="Converts Binary&#45;coded decimal to decimal. " alt="" coords="295,81,390,108"/>
+<area shape="rect" id="node10" href="$xpm_handler_8c.html#a56ce71a3b87cdaa804bddafe1d3c4781" title="Print xpm of a character. " alt="" coords="291,259,395,285"/>
+<area shape="rect" id="node11" href="$video__gr_8c.html#a59e8844cc1aa1952fe61cd313bceaac0" title="Function used to draw an image inthe screen. " alt="" coords="443,259,541,285"/>
+<area shape="rect" id="node12" href="$video__gr_8c.html#ab20a606ca3d3aa819249eeca339aee79" title="Draw pixel with specified color at position with x and y coordinates. " alt="" coords="589,259,664,285"/>
+</map>

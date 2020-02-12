@@ -1,0 +1,7 @@
+<map id="gameOver" name="gameOver">
+<area shape="rect" id="node2" href="$game_8c.html#abcc0d13a8efb59f46a7b7282fe57deda" title="Verifies if the game has already ended. " alt="" coords="150,5,229,32"/>
+<area shape="rect" id="node3" href="$highscores_8c.html#ad422f586af8b00f2f3c41495bbc76c0c" title="Verify if the time passed as argument can be a new highscore. " alt="" coords="136,107,243,133"/>
+<area shape="rect" id="node6" href="$highscores_8c.html#ae93e79b2e909fa46092fdec5cc7524af" title="Add new highscore to records array. " alt="" coords="147,56,232,83"/>
+<area shape="rect" id="node4" href="$highscores_8c.html#a69d27e97870e9904ffcb24a5fed68943" title="Stores all the record times on array res. " alt="" coords="291,56,413,83"/>
+<area shape="rect" id="node5" href="$highscores_8c.html#a040cd157a22ab628204d6d281983dd2d" title="Get the maximum object of the seconds array. " alt="" coords="303,107,401,133"/>
+</map>

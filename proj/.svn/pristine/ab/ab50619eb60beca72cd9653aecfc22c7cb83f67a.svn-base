@@ -1,0 +1,4 @@
+<map id="write_command" name="write_command">
+<area shape="rect" id="node2" href="$keyboard_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="Mask function of sys_inb(port_t port, uint32_t *byte) " alt="" coords="331,6,421,33"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#af705497321f2987d5d850326bbbdaa00" title="Writes byte to mouse. " alt="" coords="168,44,283,70"/>
+</map>
