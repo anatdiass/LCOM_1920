@@ -1,5 +1,0 @@
-var searchData=
-[
-  ['addrecord',['addRecord',['../highscores_8c.html#ae93e79b2e909fa46092fdec5cc7524af',1,'addRecord(char nome[], int seg):&#160;highscores.c'],['../highscores_8h.html#ae93e79b2e909fa46092fdec5cc7524af',1,'addRecord(char nome[], int seg):&#160;highscores.c']]],
-  ['addrecordname',['addRecordName',['../highscores_8c.html#a7744ce8d9ca6e6ec5624015103e5ef02',1,'addRecordName(char name[], int nameSize, uint8_t scancode):&#160;highscores.c'],['../highscores_8h.html#a7744ce8d9ca6e6ec5624015103e5ef02',1,'addRecordName(char name[], int nameSize, uint8_t scancode):&#160;highscores.c']]]
-];

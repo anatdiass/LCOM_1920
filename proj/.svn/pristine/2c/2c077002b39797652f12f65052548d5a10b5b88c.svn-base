@@ -1,8 +1,0 @@
-var searchData=
-[
-  ['detectmouseevent',['detectMouseEvent',['../mouse_8c.html#a839adb4af0b6075983e495bc84847af7',1,'detectMouseEvent(struct packet *pp):&#160;mouse.c'],['../mouse_8h.html#a839adb4af0b6075983e495bc84847af7',1,'detectMouseEvent(struct packet *pp):&#160;mouse.c']]],
-  ['disabledatareporting',['disableDataReporting',['../mouse_8c.html#a630c5bb9cbfcca20fac7347ff46794dc',1,'disableDataReporting():&#160;mouse.c'],['../mouse_8h.html#a630c5bb9cbfcca20fac7347ff46794dc',1,'disableDataReporting():&#160;mouse.c']]],
-  ['doublebuffering',['doubleBuffering',['../video__gr_8c.html#a1c7e7cfa4c16543d18b9013b0ac46e69',1,'doubleBuffering():&#160;video_gr.c'],['../video__gr_8h.html#a1c7e7cfa4c16543d18b9013b0ac46e69',1,'doubleBuffering():&#160;video_gr.c']]],
-  ['draw_5fimages_5fgetx',['draw_images_getX',['../game_8c.html#a994db5dd80286841d72155964bc23a6e',1,'draw_images_getX(int arr[], int i):&#160;game.c'],['../game_8h.html#a994db5dd80286841d72155964bc23a6e',1,'draw_images_getX(int arr[], int i):&#160;game.c']]],
-  ['draw_5fimages_5fgety',['draw_images_getY',['../game_8c.html#aad8a7a979cd1e528cfd3030c7b05e82b',1,'draw_images_getY(int arr[], int i):&#160;game.c'],['../game_8h.html#aad8a7a979cd1e528cfd3030c7b05e82b',1,'draw_images_getY(int arr[], int i):&#160;game.c']]]
-];

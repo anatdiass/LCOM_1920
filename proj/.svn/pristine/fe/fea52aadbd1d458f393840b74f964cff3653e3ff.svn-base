@@ -1,4 +1,0 @@
-<map id="vg_draw_rectangle" name="vg_draw_rectangle">
-<area shape="rect" id="node2" href="$video__gr_8c.html#a5e5b25bd525250f61f40b9e9f212d5e6" title="Draws a horizontal line by changing the video RAM. " alt="" coords="184,5,289,32"/>
-<area shape="rect" id="node3" href="$video__gr_8c.html#ab20a606ca3d3aa819249eeca339aee79" title="Draw pixel with specified color at position with x and y coordinates. " alt="" coords="337,5,412,32"/>
-</map>

@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['c_5fkey',['C_KEY',['../i8042_8h.html#adfb2653969987357f3abaaa3c3bdde54',1,'i8042.h']]],
-  ['count_5fmode',['count_mode',['../group__timer.html#ga069cd58184fd977a3345d560f159037a',1,'timer_status_field_val']]],
-  ['createxpms',['createXPMs',['../xpm_handler_8c.html#aa2ff0bd23a86e72e03428fb6748b3267',1,'createXPMs():&#160;xpmHandler.c'],['../xpm_handler_8h.html#aa2ff0bd23a86e72e03428fb6748b3267',1,'createXPMs():&#160;xpmHandler.c']]],
-  ['ctrl_5freg',['CTRL_REG',['../i8042_8h.html#a5a4a54453c9ef3337620a36939380cd3',1,'i8042.h']]]
-];

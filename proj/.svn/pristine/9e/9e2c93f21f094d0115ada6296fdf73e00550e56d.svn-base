@@ -1,5 +1,0 @@
-var searchData=
-[
-  ['update_5fmouse_5fposition',['update_mouse_position',['../video__gr_8c.html#abeed3c98202d48422a2508516f400b66',1,'update_mouse_position(int deltaX, int deltaY):&#160;video_gr.c'],['../video__gr_8h.html#abeed3c98202d48422a2508516f400b66',1,'update_mouse_position(int deltaX, int deltaY):&#160;video_gr.c']]],
-  ['util_5fsys_5finb',['util_sys_inb',['../keyboard_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4',1,'util_sys_inb(int port, uint8_t *value):&#160;keyboard.c'],['../keyboard_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4',1,'util_sys_inb(int port, uint8_t *value):&#160;keyboard.c']]]
-];

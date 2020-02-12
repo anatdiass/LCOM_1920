@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['r_5fkey',['R_KEY',['../i8042_8h.html#a75ac3acba95812a4be896446cd3051b4',1,'i8042.h']]],
-  ['read_5fcomd_5fbyte',['READ_COMD_BYTE',['../i8042_8h.html#ae54ca2ab260815ff66bf7a5248a34e30',1,'i8042.h']]],
-  ['rtc_5faddr_5freg',['RTC_ADDR_REG',['../_r_t_c_8h.html#a710b98232df2c563009e6f8a6cd18220',1,'RTC.h']]],
-  ['rtc_5fdata_5freg',['RTC_DATA_REG',['../_r_t_c_8h.html#a2f258a00c59c3f347c8d2d4a75471ce0',1,'RTC.h']]]
-];

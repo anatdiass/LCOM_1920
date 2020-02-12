@@ -1,6 +1,0 @@
-<map id="printRecords" name="printRecords">
-<area shape="rect" id="node2" href="$xpm_handler_8c.html#ae3dca802aa81ca964a06f78b5084fe1f" title="Print the xpms of all the characters of a word. " alt="" coords="149,5,228,32"/>
-<area shape="rect" id="node3" href="$xpm_handler_8c.html#a56ce71a3b87cdaa804bddafe1d3c4781" title="Print xpm of a character. " alt="" coords="276,5,380,32"/>
-<area shape="rect" id="node4" href="$video__gr_8c.html#a59e8844cc1aa1952fe61cd313bceaac0" title="Function used to draw an image inthe screen. " alt="" coords="428,5,527,32"/>
-<area shape="rect" id="node5" href="$video__gr_8c.html#ab20a606ca3d3aa819249eeca339aee79" title="Draw pixel with specified color at position with x and y coordinates. " alt="" coords="575,5,649,32"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="enableInterrupts" name="enableInterrupts">
-<area shape="rect" id="node2" href="$keyboard_8c.html#ab58c395d0715d93817b36b8d9a77c808" title="Checks status register and if inputBuffer is full. " alt="" coords="168,5,323,32"/>
-<area shape="rect" id="node4" href="$keyboard_8c.html#adba545b58409322e070c484942f29b92" title="Reads from the output buffer 0x60. " alt="" coords="178,56,313,83"/>
-<area shape="rect" id="node5" href="$keyboard_8c.html#ad5f628ce178177844595f0c5ec79d017" title="Writes to the output buffer 0x60. " alt="" coords="177,107,314,133"/>
-<area shape="rect" id="node3" href="$keyboard_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="Mask function of sys_inb(port_t port, uint32_t *byte) " alt="" coords="371,31,461,57"/>
-</map>

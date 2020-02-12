@@ -1,5 +1,0 @@
-\section{Class List}
-Here are the classes, structs, unions and interfaces with brief descriptions\+:\begin{DoxyCompactList}
-\item\contentsline{section}{\hyperlink{struct_record}{Record} \\*Struct of a record }{\pageref{struct_record}}{}
-\item\contentsline{section}{\hyperlink{uniontimer__status__field__val}{timer\+\_\+status\+\_\+field\+\_\+val} \\*Union for storing values of timer status fields, including the full status byte }{\pageref{uniontimer__status__field__val}}{}
-\end{DoxyCompactList}

@@ -1,6 +1,0 @@
-var searchData=
-[
-  ['enabledatareporting',['enableDataReporting',['../mouse_8c.html#acccec4ad0e781cfa7cfc9717dbd8941b',1,'enableDataReporting():&#160;mouse.c'],['../mouse_8h.html#acccec4ad0e781cfa7cfc9717dbd8941b',1,'enableDataReporting():&#160;mouse.c']]],
-  ['enableinterrupts',['enableInterrupts',['../keyboard_8c.html#ac4b3f0121a2ac45668528454fbf14f64',1,'enableInterrupts():&#160;keyboard.c'],['../keyboard_8h.html#ac4b3f0121a2ac45668528454fbf14f64',1,'enableInterrupts():&#160;keyboard.c']]],
-  ['endgame',['endGame',['../game_8c.html#abcc0d13a8efb59f46a7b7282fe57deda',1,'endGame(int arr[], int x):&#160;game.c'],['../game_8h.html#abcc0d13a8efb59f46a7b7282fe57deda',1,'endGame(int arr[], int x):&#160;game.c']]]
-];
